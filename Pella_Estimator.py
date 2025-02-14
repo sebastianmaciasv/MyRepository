@@ -6,7 +6,6 @@
 
 import streamlit as st
 import pandas as pd
-get_ipython().system('pip install joblib')
 import joblib
 
 # Load the trained model
