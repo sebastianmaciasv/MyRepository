@@ -4,9 +4,9 @@
 # In[10]:
 
 
-import streamlit as st
-import pandas as pd
-import joblib
+# import streamlit as st
+# import pandas as pd
+# import joblib
 
 # Load the trained model
 model = joblib.load(open("random_forest_price_model.pkl", "rb"))
