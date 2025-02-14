@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[10]:
 
 
 import streamlit as st
 import pandas as pd
+get_ipython().system('pip install joblib')
 import joblib
 
 # Load the trained model
-model = joblib.load('random_forest_price_model.pkl')
+model = joblib.load(open("random_forest_price_model.pkl", "rb"))
 
 st.title("Pella Windows & Doors Price Estimator")
 
@@ -50,10 +51,10 @@ if st.button("Predict Price"):
 
 
 
-# In[5]:
+# In[9]:
 
 
-
+get_ipython().system('jupyter nbconvert --to script Pella_Estimator.ipynb')
 
 
 # In[ ]:
